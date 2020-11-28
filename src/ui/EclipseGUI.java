@@ -151,7 +151,7 @@ public class EclipseGUI {
     		}
     		for(int i=0; i<stars.length; i++) {
     			Random random = new Random();
-    			if(random.nextBoolean()&&random.nextBoolean()&&random.nextBoolean()&&random.nextBoolean()) {
+    			if(random.nextBoolean()&&random.nextBoolean()&&random.nextBoolean()) {
     				stars[i].setFill(Color.rgb((int)(rgb[0]*light), (int)(rgb[1]*light), (int)(rgb[2]*light)));
     			} else {
     				stars[i].setFill(Color.rgb((int)(255-(255-rgb[0])*light), (int)(255-(255-rgb[1])*light), (int)(255-(255-rgb[2])*light)));
