@@ -21,15 +21,6 @@ _To obtain a copy of the project, you only need to download it_
 
 _You must have a current version of Java installed, JDK 1.8 and a current version of Eclipse_
 
-_Download links:_
-
-```
-https://www.java.com/
-https://www.oracle.com/co/java/technologies/javase-downloads.html
-https://www.eclipse.org/downloads/
-https://gluonhq.com/products/scene-builder/
-```
-
 ## Built with 🛠️
 
 * [Java](https://www.java.com/)
