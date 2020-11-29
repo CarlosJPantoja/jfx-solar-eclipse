@@ -141,7 +141,7 @@ public class EclipseGUI {
     public void initialize() {
     	ball = new Eclipse(moon.getLayoutX(), moon.getRadius(), sun.getLayoutX(), pane.getPrefWidth());
     	random = new Random();
-    	rgb = new int[] {255, 255, 176};
+    	rgb = new int[] {255, 255, 200}; //255, 255, 176
     	stars = new Circle[] {star1, star2, star3, star4, star5, star6, star7, star8, star9, star10, star11, star12, star13, star14, star15, star16};
     	planets = new Circle[] {planet1, planet2, planet3, planet4, planet5, planet6};
     	movingCircles = new Circle[] {crater1, crater2, crater3, moon};
@@ -149,6 +149,7 @@ public class EclipseGUI {
     }
     
     private void fixColors() {
+    	updatePane(rgb[0], rgb[1], rgb[2]);
     	updateCircles(planets, rgb[0], rgb[1], rgb[2], true);
     	updateCircles(stars, rgb[0], rgb[1], rgb[2], true);
     	LightThread bt = new LightThread(ball, this);

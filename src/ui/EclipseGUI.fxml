@@ -7,7 +7,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: rgb(255, 255, 176);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.EclipseGUI">
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.EclipseGUI">
    <children>
       <Button fx:id="btnMove" layoutX="273.0" layoutY="287.0" mnemonicParsing="false" onAction="#moveMoon" style="-fx-background-color: #1c74ec;" text="Move" textFill="WHITE">
          <font>
@@ -20,12 +20,12 @@
          </font>
       </Button>
       <Slider fx:id="bar" layoutX="330.0" layoutY="367.0" max="30.0" min="1.0" nodeOrientation="RIGHT_TO_LEFT" value="30.0" />
-      <Label layoutX="273.0" layoutY="360.0" text="Slow" textFill="#11ff00">
+      <Label layoutX="273.0" layoutY="360.0" text="Slow" textFill="RED">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="487.0" layoutY="360.0" text="Fast" textFill="RED">
+      <Label layoutX="487.0" layoutY="360.0" text="Fast" textFill="#11ff00">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -53,9 +53,9 @@
       <Circle fx:id="planet1" fill="WHITE" layoutX="37.0" layoutY="201.0" radius="4.0" stroke="TRANSPARENT" strokeType="INSIDE" />
       <Circle fx:id="star4" fill="WHITE" layoutX="162.0" layoutY="277.0" radius="4.0" stroke="TRANSPARENT" strokeType="INSIDE" />
       <Circle fx:id="sun" fill="YELLOW" layoutX="400.0" layoutY="167.0" radius="58.0" stroke="#00000018" strokeType="INSIDE" />
-      <Circle fx:id="moon" fill="#b5b3b3" layoutX="-58.0" layoutY="167.0" radius="58.0" stroke="#00000054" strokeType="INSIDE" />
-      <Circle fx:id="crater2" fill="#3c3c3c" layoutX="-58.0" layoutY="147.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="crater3" fill="#979797" layoutX="-24.0" layoutY="153.0" radius="14.0" stroke="#00000056" strokeType="INSIDE" />
-      <Circle fx:id="crater1" fill="#848b92" layoutX="-47.0" layoutY="184.0" radius="17.0" stroke="#0000005e" strokeType="INSIDE" />
+      <Circle fx:id="moon" fill="#e3e3d0" layoutX="-58.0" layoutY="167.0" radius="58.0" stroke="#00000054" strokeType="INSIDE" />
+      <Circle fx:id="crater2" fill="#55554e" layoutX="-58.0" layoutY="147.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="crater3" fill="#aaaa9c" layoutX="-24.0" layoutY="153.0" radius="14.0" stroke="#00000056" strokeType="INSIDE" />
+      <Circle fx:id="crater1" fill="#8e8e82" layoutX="-47.0" layoutY="184.0" radius="17.0" stroke="#0000005e" strokeType="INSIDE" />
    </children>
 </Pane>
