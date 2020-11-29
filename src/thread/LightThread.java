@@ -4,19 +4,19 @@ import javafx.application.Platform;
 import model.Eclipse;
 import ui.EclipseGUI;
 
-public class EclipseThread extends Thread {
-	
+public class LightThread extends Thread {
+
 	private Eclipse moon;
 	private EclipseGUI gui;
 
-	public EclipseThread(Eclipse moon, EclipseGUI gui) {
+	public LightThread(Eclipse moon, EclipseGUI gui) {
 		this.moon = moon;
 		this.gui = gui;
 	}
 	
 	@Override
 	public void run() {
-		while(moon.isMoving()) {
+		while(true) {
 			try {
 				Thread.sleep(gui.getSleepTime());
 			} catch (InterruptedException e) {
@@ -25,9 +25,10 @@ public class EclipseThread extends Thread {
 			Platform.runLater(new Runnable() {
 				@Override
 				public void run() {
-					gui.update(moon.move());
+					gui.updateLight(moon.getLight());
 				}
 			});
 		}
 	}
+	
 }

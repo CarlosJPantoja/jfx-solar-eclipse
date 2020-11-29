@@ -8,7 +8,7 @@ public class Eclipse {
 	private double max;
 	private boolean moving;
 	
-	public Eclipse(double x, double rad, double xObst, double radObst, double max) {
+	public Eclipse(double x, double rad, double xObst, double max) {
 		this.x = x;
 		this.rad = rad;
 		this.xObst = xObst;
